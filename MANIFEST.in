@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bremer_solidarstrom *.css
+recursive-include bremer_solidarstrom *.csv
+recursive-include bremer_solidarstrom *.html
+recursive-include bremer_solidarstrom *.ico
+recursive-include bremer_solidarstrom *.js
+recursive-include bremer_solidarstrom *.json
+recursive-include bremer_solidarstrom *.md
+recursive-include bremer_solidarstrom *.png
+recursive-include bremer_solidarstrom *.py
+recursive-include bremer_solidarstrom *.svg
+recursive-include bremer_solidarstrom *.txt
+recursive-exclude bremer_solidarstrom *.pyc
