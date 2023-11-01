@@ -1,0 +1,23 @@
+{
+ "creation": "2023-11-01 15:02:39.657464",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "dynamic_filters_json": "",
+ "filters_config": "[\n    {\n        \"fieldname\": \"fieldname\",\n        \"label\": __(\"Fieldname\"),\n        \"fieldtype\": \"Select\",\n        \"options\": [\n            {\"value\": \"actual_qty\", \"label\": \"Actual Qty\"},\n            {\"value\": \"reserved_qty\", \"label\": \"Reserved Qty\"},\n            {\"value\": \"projected_qty\", \"label\": \"Projected Qty\"},\n        ],\n        \"default\": \"actual_qty\",\n        \"reqd\": 1\n    },\n    {\n        \"fieldname\": \"item_code\",\n        \"label\": __(\"Item Code\"),\n        \"fieldtype\": \"Link\",\n        \"options\": \"Item\"\n    },\n    {\n        \"fieldname\": \"warehouse\",\n        \"label\": __(\"Warehouse\"),\n        \"fieldtype\": \"Link\",\n        \"options\": \"Warehouse\"\n    },\n    {\n        \"fieldname\": \"item_group\",\n        \"label\": __(\"Item Group\"),\n        \"fieldtype\": \"Link\",\n        \"options\": \"Item Group\"\n    }\n]",
+ "filters_json": "{\"fieldname\":\"actual_qty\"}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Stock Quantity",
+ "method": "bremer_solidarstrom.bremer_solidarstrom.number_card.stock_quantity.stock_quantity.get_data",
+ "modified": "2023-11-01 17:32:36.718498",
+ "modified_by": "Administrator",
+ "module": "Bremer Solidarstrom",
+ "name": "Stock Quantity",
+ "owner": "Administrator",
+ "report_function": "Sum",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Custom"
+}
