@@ -118,13 +118,14 @@ app_license = "GPLv3"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Lead": {
+		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.lead.before_save",
+	},
+	"Project": {
+		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.project.before_save",
+	},
+}
 
 # Scheduled Tasks
 # ---------------
