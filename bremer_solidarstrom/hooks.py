@@ -110,9 +110,9 @@ app_license = "GPLv3"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Project": "bremer_solidarstrom.bremer_solidarstrom.custom.project.CustomProject",
+}
 
 # Document Events
 # ---------------
@@ -121,9 +121,6 @@ app_license = "GPLv3"
 doc_events = {
 	"Lead": {
 		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.lead.before_save",
-	},
-	"Project": {
-		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.project.before_save",
 	},
 }
 
