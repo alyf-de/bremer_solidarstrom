@@ -122,6 +122,9 @@ doc_events = {
 	"Lead": {
 		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.lead.before_save",
 	},
+	"Sales Order": {
+		"before_save": "bremer_solidarstrom.bremer_solidarstrom.custom.sales_order.before_save",
+	},
 }
 
 # Scheduled Tasks
