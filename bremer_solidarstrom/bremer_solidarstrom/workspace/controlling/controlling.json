@@ -1,0 +1,62 @@
+{
+ "charts": [
+  {
+   "chart_name": "Cash Flow",
+   "label": "Cash Flow Forecast"
+  },
+  {
+   "chart_name": "Profit and Loss",
+   "label": "Profit and Loss"
+  }
+ ],
+ "content": "[{\"id\":\"ySzMhFUbZB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Controlling</span>\",\"col\":12}},{\"id\":\"Qoa7xdyguG\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ausg. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"hG8x2fp42z\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Eing. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"pez6mPAqya\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Wechselrichter Lagerbest.\",\"col\":3}},{\"id\":\"avc_Ift2qX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Balkon-Solarmodule Lagerbest.\",\"col\":3}},{\"id\":\"3emQ1lyUjA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ford. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"QDBA7vBOxw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Verb. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"8rSW6WNhBA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"B1k-EoIRjE\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kann rechts oben bearbeitet werden\",\"col\":12}},{\"id\":\"E2dtFVvOE4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Profit and Loss\",\"col\":12}},{\"id\":\"DEtPqjjDF3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CXXXdDUtm7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cash Flow Forecast\",\"col\":12}}]",
+ "creation": "2023-11-01 13:51:37.362801",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "income",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Controlling",
+ "links": [],
+ "modified": "2023-11-26 21:31:44.732206",
+ "modified_by": "Administrator",
+ "module": "Bremer Solidarstrom",
+ "name": "Controlling",
+ "number_cards": [
+  {
+   "label": "Ausg. Rechnungen (Jahr)",
+   "number_card_name": "Total Outgoing Bills"
+  },
+  {
+   "label": "Wechselrichter Lagerbest.",
+   "number_card_name": "Lagerbestand Artikelgruppe Wechselrichter"
+  },
+  {
+   "label": "Ford. aus LuL - SoMiKo",
+   "number_card_name": "Ford. aus LuL - SoMiKo"
+  },
+  {
+   "label": "Balkon-Solarmodule Lagerbest.",
+   "number_card_name": "Lagerbestand Artikelgruppe Balkon-Solarmodule"
+  },
+  {
+   "label": "Verb. aus LuL - SoMiKo",
+   "number_card_name": "Verb. aus LuL - SoMiKo"
+  },
+  {
+   "label": "Eing. Rechnungen (Jahr)",
+   "number_card_name": "Total Incoming Bills"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Controlling"
+}
