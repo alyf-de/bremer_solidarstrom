@@ -12,4 +12,4 @@ def get_global_margin(to_date, quotation_management_cost):
 	overhead_cost = get_overhead_cost(from_date, to_date)
 	total_management_cost = get_management_cost(from_date, to_date)[0]
 
-	return overhead_cost * flt(quotation_management_cost) / total_management_cost
+	return min(overhead_cost * flt(quotation_management_cost) / total_management_cost, overhead_cost)
