@@ -1,5 +1,5 @@
 import frappe
-from bremer_solidarstrom.next_todo import get_next_todo
+from bremer_solidarstrom.bremer_solidarstrom.next_todo import get_next_todo
 from erpnext.projects.doctype.project.project import Project
 from frappe.query_builder.functions import Sum
 from frappe.utils.data import add_years, flt, get_datetime

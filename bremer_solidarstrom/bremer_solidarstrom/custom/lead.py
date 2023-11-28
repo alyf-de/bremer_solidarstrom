@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 
-from bremer_solidarstrom.next_todo import get_next_todo
+from bremer_solidarstrom.bremer_solidarstrom.next_todo import get_next_todo
 
 if TYPE_CHECKING:
 	from erpnext.crm.doctype.lead.lead import Lead
