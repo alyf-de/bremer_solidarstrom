@@ -1,0 +1,1 @@
+execute:frappe.db.set_value("Client Script", "Quotation-Client", "enabled", 0)
