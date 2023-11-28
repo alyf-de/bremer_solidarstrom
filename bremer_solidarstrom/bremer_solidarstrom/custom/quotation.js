@@ -2,12 +2,13 @@ frappe.ui.form.on("Quotation", {
 	global_margin(frm) {
 		frm.trigger("update_item_rates");
 	},
-	custom_profit_margin (frm) {
+	custom_profit_margin(frm) {
 		frm.trigger("update_item_rates");
 	},
 	update_item_rates(frm) {
 		const total = frm.doc.items.reduce(
-			(acc, item) => acc + item.price_list_rate * item.qty,
+			(acc, item) =>
+				acc + (item.valuation_rate || item.base_price_list_rate) * item.qty,
 			0
 		);
 
@@ -16,12 +17,17 @@ frappe.ui.form.on("Quotation", {
 		const handling_factor = 1.1;
 
 		for (const item of frm.doc.items) {
+			let base_rate = item.valuation_rate || item.base_price_list_rate;
 			frappe.model.set_value(
 				item.doctype,
 				item.name,
 				"rate",
 				Math.round(
-					(item.price_list_rate * handling_factor * margin_factor * profit_factor +
+					(base_rate *
+						frm.doc.conversion_rate *
+						handling_factor *
+						margin_factor *
+						profit_factor +
 						Number.EPSILON) *
 						100
 				) / 100
