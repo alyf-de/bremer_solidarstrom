@@ -1,7 +1,6 @@
-import frappe
+from bremer_solidarstrom.bremer_solidarstrom.overhead_costs import get_overhead_cost, get_management_cost
 from bremer_solidarstrom.bremer_solidarstrom.next_todo import get_next_todo
 from erpnext.projects.doctype.project.project import Project
-from frappe.query_builder.functions import Sum
 from frappe.utils.data import add_years, flt, get_datetime
 
 
@@ -67,66 +66,14 @@ class CustomProject(Project):
 
 def get_project_overhead(project_name, project_start_date):
 	"""Calculate the common cost attributable to the project.""" ""
-	item_code = "000.000.250"
 	end_date = get_datetime(project_start_date).date()
 	start_date = add_years(end_date, -1)
 
 	total_mgmt_cost, project_mgmt_cost = get_management_cost(
-		project_name, item_code, start_date, end_date
+		start_date, end_date, project_name
 	)
-	total_common_cost = get_common_cost(start_date, end_date)
+	total_common_cost = get_overhead_cost(start_date, end_date)
 
 	return min(
 		total_common_cost * project_mgmt_cost / total_mgmt_cost, total_common_cost
 	)
-
-
-def get_common_cost(from_date, to_date) -> float:
-	"""Return the total common cost for the given period."""
-	gl_entry = frappe.qb.DocType("GL Entry")
-	account = frappe.qb.DocType("Account")
-
-	base_query = (
-		frappe.qb.from_(gl_entry)
-		.left_join(account)
-		.on(gl_entry.account == account.name)
-		.select(Sum(gl_entry.debit - gl_entry.credit))
-		.where(
-			(account.root_type == "Expense")
-			& gl_entry.posting_date.between(from_date, to_date)
-			& gl_entry.project.isnull()
-		)
-	)
-
-	return base_query.run()[0][0] or 0.0
-
-
-def get_management_cost(
-	project_name, item_code, from_date, to_date
-) -> tuple[float, float]:
-	"""Return the total management cost and the project management cost for the given period."""
-	sales_order = frappe.qb.DocType("Sales Order")
-	sales_order_item = frappe.qb.DocType("Sales Order Item")
-	base_query = (
-		frappe.qb.from_(sales_order_item)
-		.left_join(sales_order)
-		.on(
-			(sales_order_item.parent == sales_order.name)
-			& (sales_order_item.parenttype == "Sales Order")
-		)
-		.select(Sum(sales_order_item.base_net_amount))
-		.where((sales_order_item.item_code == item_code) & (sales_order.docstatus == 1))
-	)
-
-	total_cost = (
-		base_query.where(
-			sales_order.project.notnull()
-			& sales_order.transaction_date.between(from_date, to_date)
-		).run()[0][0]
-		or 0.0
-	)
-	project_cost = (
-		base_query.where(sales_order.project == project_name).run()[0][0] or 0.0
-	)
-
-	return total_cost, project_cost
