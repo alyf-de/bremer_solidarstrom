@@ -7,9 +7,13 @@
   {
    "chart_name": "Profit and Loss",
    "label": "Profit and Loss"
+  },
+  {
+   "chart_name": "Stock By Item Group",
+   "label": "Bestand nach Artikelgruppe"
   }
  ],
- "content": "[{\"id\":\"ySzMhFUbZB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Controlling</span>\",\"col\":12}},{\"id\":\"Qoa7xdyguG\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ausg. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"hG8x2fp42z\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Eing. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"pez6mPAqya\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Wechselrichter Lagerbest.\",\"col\":3}},{\"id\":\"avc_Ift2qX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Balkon-Solarmodule Lagerbest.\",\"col\":3}},{\"id\":\"3emQ1lyUjA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ford. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"QDBA7vBOxw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Verb. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"8rSW6WNhBA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"B1k-EoIRjE\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kann rechts oben bearbeitet werden\",\"col\":12}},{\"id\":\"E2dtFVvOE4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Profit and Loss\",\"col\":12}},{\"id\":\"DEtPqjjDF3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CXXXdDUtm7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cash Flow Forecast\",\"col\":12}}]",
+ "content": "[{\"id\":\"ySzMhFUbZB\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Controlling</span>\",\"col\":12}},{\"id\":\"Qoa7xdyguG\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ausg. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"hG8x2fp42z\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Eing. Rechnungen (Jahr)\",\"col\":3}},{\"id\":\"pez6mPAqya\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Wechselrichter Lagerbest.\",\"col\":3}},{\"id\":\"avc_Ift2qX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Balkon-Solarmodule Lagerbest.\",\"col\":3}},{\"id\":\"3emQ1lyUjA\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ford. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"QDBA7vBOxw\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Verb. aus LuL - SoMiKo\",\"col\":3}},{\"id\":\"8rSW6WNhBA\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"B1k-EoIRjE\",\"type\":\"paragraph\",\"data\":{\"text\":\"Kann rechts oben bearbeitet werden\",\"col\":12}},{\"id\":\"E2dtFVvOE4\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Profit and Loss\",\"col\":12}},{\"id\":\"DEtPqjjDF3\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CXXXdDUtm7\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Cash Flow Forecast\",\"col\":12}},{\"id\":\"tb-bl8V4zy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KWOX0nKas2\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Bestand nach Artikelgruppe\",\"col\":12}}]",
  "creation": "2023-11-01 13:51:37.362801",
  "custom_blocks": [],
  "docstatus": 0,
@@ -21,7 +25,7 @@
  "is_hidden": 0,
  "label": "Controlling",
  "links": [],
- "modified": "2023-11-26 21:31:44.732206",
+ "modified": "2023-11-29 19:53:06.475271",
  "modified_by": "Administrator",
  "module": "Bremer Solidarstrom",
  "name": "Controlling",
@@ -56,7 +60,7 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 1.0,
+ "sequence_id": 2.0,
  "shortcuts": [],
  "title": "Controlling"
 }

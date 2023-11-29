@@ -1,0 +1,275 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"EI9IiZ1S5o\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Bremer Solidarstrom</span>\",\"col\":12}},{\"id\":\"9Jw6EvmyvW\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Meine Interessent*innen\",\"col\":4}},{\"id\":\"sldrJHcOvh\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Alle Interessen*innen\",\"col\":4}},{\"id\":\"iKpozn-Ahc\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Meine Projekte\",\"col\":4}},{\"id\":\"r_GsEcHxkQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"jtKHm_17Hp\",\"type\":\"card\",\"data\":{\"card_name\":\"Vertrieb\",\"col\":4}},{\"id\":\"B38imxndU-\",\"type\":\"card\",\"data\":{\"card_name\":\"Projekte\",\"col\":4}},{\"id\":\"ll4-Rv3WS6\",\"type\":\"card\",\"data\":{\"card_name\":\"Buchhaltung\",\"col\":4}},{\"id\":\"3C93FROXgl\",\"type\":\"card\",\"data\":{\"card_name\":\"Lager\",\"col\":4}},{\"id\":\"eyD_ePm1Rn\",\"type\":\"card\",\"data\":{\"card_name\":\"Einkauf\",\"col\":4}}]",
+ "creation": "2023-11-29 19:17:57.505682",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Bremer Solidarstrom",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Buchhaltung",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "PreRechnung",
+   "link_count": 0,
+   "link_to": "PreRechnung",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Invoice",
+   "link_count": 0,
+   "link_to": "Purchase Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Journal Entry",
+   "link_count": 0,
+   "link_to": "Journal Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vertrieb",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead",
+   "link_count": 0,
+   "link_to": "Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Chance",
+   "link_count": 0,
+   "link_to": "Opportunity",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Angebot",
+   "link_count": 0,
+   "link_to": "Quotation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lost Quotations",
+   "link_count": 0,
+   "link_to": "Lost Quotations",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Projekte",
+   "link_count": 4,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Auftrag",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Projekt",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Kunde",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Delivery Note",
+   "link_count": 0,
+   "link_to": "Delivery Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Einkauf",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Supplier",
+   "link_count": 0,
+   "link_to": "Supplier",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Order",
+   "link_count": 0,
+   "link_to": "Purchase Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Purchase Receipt",
+   "link_count": 0,
+   "link_to": "Purchase Receipt",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lager",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Artikel",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lagerbuchung",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bestand nach Artikelgruppe",
+   "link_count": 0,
+   "link_to": "Stock By Item Group",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-11-29 19:46:26.782682",
+ "modified_by": "Administrator",
+ "module": "Bremer Solidarstrom",
+ "name": "Bremer Solidarstrom",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Lead",
+   "label": "Meine Interessent*innen",
+   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false]]"
+  },
+  {
+   "document_type": "Lead",
+   "label": "Alle Interessen*innen",
+   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false]]"
+  },
+  {
+   "document_type": "Project",
+   "label": "Meine Projekte",
+   "quick_list_filter": "[[\"Project\",\"status\",\"=\",\"Open\",false]]"
+  }
+ ],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [],
+ "title": "Bremer Solidarstrom"
+}
