@@ -35,6 +35,10 @@ frappe.ui.form.on("Quotation", {
 		}
 	},
 	custom_fetch_global_margin(frm) {
+		if (frm.doc.docstatus !== 0) {
+			frappe.throw(__("Quotation must be in draft state"));
+		}
+
 		const ITEM_CODE = "000.000.250";
 		const management_cost = frm.doc.items
 			.filter((item) => item.item_code === ITEM_CODE)

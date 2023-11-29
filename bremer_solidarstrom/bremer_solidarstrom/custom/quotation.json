@@ -525,7 +525,7 @@
    "columns": 0,
    "creation": "2023-11-28 16:50:56.764018",
    "default": null,
-   "depends_on": null,
+   "depends_on": "eval:doc.docstatus === 0",
    "description": null,
    "docstatus": 0,
    "dt": "Quotation",
