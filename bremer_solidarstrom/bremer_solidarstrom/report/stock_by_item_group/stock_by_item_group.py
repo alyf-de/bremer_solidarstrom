@@ -53,7 +53,7 @@ def get_columns():
 			"label": _("Quantity"),
 			"fieldtype": "Float",
 			"width": 120,
-			"precision": 0,
+			"precision": 2,
 		},
 		{
 			"fieldname": "value",
