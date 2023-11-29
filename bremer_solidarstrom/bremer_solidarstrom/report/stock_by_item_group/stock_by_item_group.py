@@ -4,10 +4,32 @@
 import frappe
 from frappe import _
 from frappe.query_builder.functions import Sum, Round
+from erpnext import get_company_currency
 
 
 def execute(filters=None):
-	return get_columns(), get_data(filters.get("company"), filters.get("warehouse"))
+	company = filters.get("company")
+	data = get_data(company, filters.get("warehouse"))
+	chart = get_chart(data, company)
+
+	return get_columns(), data, None, chart
+
+
+def get_chart(data, company):
+	currency = get_company_currency(company)
+	return {
+		"type": "bar",
+		"colors": ["#ffcb00"],
+		"data": {
+			"labels": [d[0] for d in data],
+			"datasets": [
+				{
+					"name": currency,
+					"values": [d[3] for d in data],
+				},
+			],
+		}
+	}
 
 
 def get_columns():
