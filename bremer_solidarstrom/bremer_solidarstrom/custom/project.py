@@ -11,13 +11,15 @@ TODO_FIELDS = [
 	),
 	("custom_selbstbautermin_vereinbart", "Selbstbautermin vereinbaren"),
 	("custom_material_bestellt", "Material bestellen"),
+	("custom_gerüst_bestellt", "Gerüst bestellen"),
 	(
 		"custom_versicherungen_für_baueinsatz_abgeschlossen",
 		"Versicherungen für Baueinsatz abschließen",
 	),
-	("custom_dachmontage_durchgeführt", "Dachmontage durchführen"),
+	("custom_modulmontage_durchgeführt", "Modulmontage durchführen"),
 	("custom_dcinstallation_durchgeführt", "DC-Installation durchführen"),
 	("custom_acinstallation_durchgeführt", "AC-Installation durchführen"),
+	("custom_erdung_fertig", "Erdung fertigsellen"),
 	("custom_dokumentation_übergeben", "Dokumentation übergeben"),
 	(
 		"custom_fertigmeldung_beim_netzbetreiber_eingereicht",
