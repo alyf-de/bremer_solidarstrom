@@ -243,7 +243,7 @@
    "type": "Link"
   }
  ],
- "modified": "2023-11-29 19:46:26.782682",
+ "modified": "2023-12-01 15:10:35.203574",
  "modified_by": "Administrator",
  "module": "Bremer Solidarstrom",
  "name": "Bremer Solidarstrom",
@@ -255,12 +255,12 @@
   {
    "document_type": "Lead",
    "label": "Meine Interessent*innen",
-   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false]]"
+   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false],[\"Lead\",\"custom_projekt_abgebrochen\",\"=\",0,false]]"
   },
   {
    "document_type": "Lead",
    "label": "Alle Interessen*innen",
-   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false]]"
+   "quick_list_filter": "[[\"Lead\",\"custom_next_todo\",\"is\",\"set\",false],[\"Lead\",\"custom_projekt_abgebrochen\",\"=\",0,false]]"
   },
   {
    "document_type": "Project",
