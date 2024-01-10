@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "creation": "2024-01-10 14:17:51.682181",
+ "default_view": "List",
+ "description": "Dummy DocType for Bremer Solidarstrom. Required because User.build_permissions only allows modules that contain DocTypes the user can read.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dummy"
+ ],
+ "fields": [
+  {
+   "fieldname": "dummy",
+   "fieldtype": "Data",
+   "label": "Dummy"
+  }
+ ],
+ "in_create": 1,
+ "links": [],
+ "modified": "2024-01-10 14:18:40.953420",
+ "modified_by": "Administrator",
+ "module": "Bremer Solidarstrom",
+ "name": "BS Dummy",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "read": 1,
+   "role": "All"
+  }
+ ],
+ "read_only": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
