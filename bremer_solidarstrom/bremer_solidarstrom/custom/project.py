@@ -34,7 +34,7 @@ class CustomProject(Project):
 	def before_save(self):
 		if hasattr(super(), "before_save"):
 			super().before_save()
-		self.custom_next_todo = get_next_todo(self, TODO_FIELDS, self.custom_next_todo)
+		self.custom_next_todo = get_next_todo(self, TODO_FIELDS, self.custom_next_todo, ["Completed", "Cancelled"])
 
 	def update_costing(self):
 		self.custom_overhead_share = get_project_overhead(self.name, self.creation)

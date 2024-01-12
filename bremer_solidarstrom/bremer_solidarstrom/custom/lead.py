@@ -15,4 +15,6 @@ TODO_FIELDS = [
 
 
 def before_save(doc: "Lead", event: str):
-	doc.custom_next_todo = get_next_todo(doc, TODO_FIELDS, doc.custom_next_todo)
+	doc.custom_next_todo = get_next_todo(
+		doc, TODO_FIELDS, doc.custom_next_todo, ["Do Not Contact", "Converted"]
+	)
